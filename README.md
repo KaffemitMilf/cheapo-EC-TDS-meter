@@ -38,8 +38,10 @@ R<sub>2</sub> = (V<sub>out</sub>*R<sub>1</sub>)/ (V<sub>in</sub>-V<sub>out</sub>
 Since our rods are 0.7cm away from each other, we divide the Resistance by 0.7, so we get the resistance for one centimeter <br/>
 R<sub>cm</sub> =  R<sub>2</sub>/0.7
 
-Calculating the EC<sub>cm</sub>: <br/>
-EC<sub>cm</sub> = 1/R<sub>cm</sub>
+### calculating EC 
+
+Calculating the EC/cm and multiplying it by 10<sup>6</sup> to get μS/cm: <br/>
+EC<sub>cm</sub> = 1/R<sub>cm</sub>*
 
 Because the EC depends on the water temperature we need to compensate the temperature, to compare, we use the EC at 25°C: </br>
 EC<sub>25</sub> = EC /( 1 + a (T - 25))
@@ -48,3 +50,11 @@ EC<sub>25</sub> = EC /( 1 + a (T - 25))
 - a - 0.019 °C (commonly used for nutrient solutions)
 
 dont ask me how and why it works, it is completly stolen from Micheal Ratcliffe´s project...
+
+### avoiding polarization
+To avoid the polarization and electrolysis of the liquid, we only measure in a short pulse. Otherwise the resistance will change.
+Instead of using the 5V pin, I used a pin, which I can switch on/off.
+
+ 
+
+
