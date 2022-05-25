@@ -28,7 +28,7 @@ To get around that, we use a voltage divider, so we can measure a voltage and ca
 - R<sub>1</sub>resistor (R<sub>1</sub>) - known resistance
 - R<sub>2</sub> resistor (R<sub>2</sub>) - unknown resistor, resistance accross the stainless steel rods, water
 - V<sub>in</sub> - input voltage
-- V<sub>out</sub> - measured voltage between R<sub>2</sub> and - 
+- V<sub>out</sub> - measured voltage between R<sub>2</sub!> and - 
 
 
 
@@ -69,12 +69,14 @@ You need:
 1. solder a cable to one of the ends of each rod
 2. insert the DS18B20 and the steel roods, so it looks like this:
  
-![Screenshot 2022-05-25 132547](https://user-images.githubusercontent.com/80157991/170251552-d002e04f-e2db-48c3-bfb3-7131e3552c1e.png)
+![stick_view](https://user-images.githubusercontent.com/80157991/170273426-40befbda-b42f-4e88-accd-4c0a76d9a8a2.png)
+
 
 3. If you want it to be floating, you can fill the gaps with styropor by pressing the 3D-model into it, dont forget to glue it down
 4. You can add two strings through these holes, so it is always floating at the same place, I kept the strings under tension by adding a suction cup connected with one end of the string to the bottom of the reservoir and connected the other end to the lid of my hydroponic reservoir.
 
-![image](https://user-images.githubusercontent.com/80157991/170252866-996a42d8-79de-47b6-bc1c-0d90998728b3.png)
 
+
+![front_view](https://user-images.githubusercontent.com/80157991/170272913-3d3b8dd5-d585-4202-bf20-8e1e66999937.png)
 
 
