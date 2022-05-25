@@ -55,6 +55,26 @@ dont ask me how and why it works, it is completly stolen from Micheal RatcliffeÂ
 To avoid the polarization and electrolysis of the liquid, we only measure in a short pulse. Otherwise the resistance will change.
 Instead of using the 5V pin, I used a pin, which I can switch on/off.
 
+## 3D Model
+I have no experience, what belongs to 3D printing, so I am only explaining my concept  
+
+You need:
+- 2mm diameter stainless steel rods
+- DS18B20
+- soldering iron
+- solder
+- some cable
+- the 3D print
+
+1. solder a cable to one of the ends of each rod
+2. insert the DS18B20 and the steel roods, so it looks like this:
  
+![Screenshot 2022-05-25 132547](https://user-images.githubusercontent.com/80157991/170251552-d002e04f-e2db-48c3-bfb3-7131e3552c1e.png)
+
+3. If you want it to be floating, you can fill the gaps with styropor by pressing the 3D-model into it, dont forget to glue it down
+4. You can add two strings through these holes, so it is always floating at the same place, I kept the strings under tension by adding a suction cup connected with one end of the string to the bottom of the reservoir and connected the other end to the lid of my hydroponic reservoir.
+
+![image](https://user-images.githubusercontent.com/80157991/170252866-996a42d8-79de-47b6-bc1c-0d90998728b3.png)
+
 
 
