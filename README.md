@@ -41,7 +41,7 @@ R<sub>cm</sub> =  R<sub>2</sub>/0.6
 ### calculating EC 
 
 Calculating the EC/cm and multiplying it by 10<sup>6</sup> to get μS/cm: <br/>
-EC<sub>cm</sub> = 1/R<sub>cm</sub>*
+EC<sub>cm</sub> = 1/R<sub>cm</sub>*10<sup>6</sup>
 
 Because the EC depends on the water temperature we need to compensate the temperature, to compare, we use the EC at 25°C: </br>
 EC<sub>25</sub> = EC /( 1 + a (T - 25))
