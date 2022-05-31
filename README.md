@@ -52,8 +52,7 @@ EC<sub>25</sub> = EC /( 1 + a (T - 25))
 dont ask me how and why it works, it is completly stolen from Micheal Ratcliffe´s project...
 
 ### avoiding polarization
-To avoid the polarization and electrolysis of the liquid, we only measure in a short pulse. Otherwise the resistance will change.
-Instead of using the 5V pin, I used a pin, which I can switch on/off.
+Although we are using a voltage divider, we cant turn it on for more than a few microseconds at a time as electrolysis begins and gives us wrong readings,  as bubbles form on the probe faces. We turn it on quickly take a measurement and turn it off again before the bubbles have time to form.
 
 ## 3D Model
 I have no experience, what belongs to 3D printing, so I am only explaining my concept  
