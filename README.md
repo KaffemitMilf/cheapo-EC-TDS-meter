@@ -28,7 +28,7 @@ To get around that, we use a voltage divider, so we can measure a voltage and ca
 - R<sub>1</sub>resistor (R<sub>1</sub>) - known resistance
 - R<sub>2</sub> resistor (R<sub>2</sub>) - unknown resistor, resistance accross the stainless steel rods, water
 - V<sub>in</sub> - input voltage
-- V<sub>out</sub> - measured voltage between R<sub>2</sub!> and - 
+- V<sub>out</sub> - measured voltage across R<sub>2</sub>  
 
 
 
