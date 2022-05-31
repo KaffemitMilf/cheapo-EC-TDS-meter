@@ -35,8 +35,8 @@ To get around that, we use a voltage divider, so we can measure a voltage and ca
 
 R<sub>2</sub> = (V<sub>out</sub>*R<sub>1</sub>)/ (V<sub>in</sub>-V<sub>out</sub>) (voltage divider formula)
 
-Since our rods are 0.7cm away from each other, we divide the Resistance by 0.7, so we get the resistance for one centimeter <br/>
-R<sub>cm</sub> =  R<sub>2</sub>/0.7
+Since our rods are 0.6cm away from each other, we divide the Resistance by 0.7, so we get the resistance for one centimeter <br/>
+R<sub>cm</sub> =  R<sub>2</sub>/0.6
 
 ### calculating EC 
 
