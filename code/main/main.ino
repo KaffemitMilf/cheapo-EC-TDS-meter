@@ -16,42 +16,48 @@ void setup() {
 }
 
 void loop() {
-  measureEC();
-  delay(5000);
+  Serial.println("-----------------------------------------");
+  Serial.print(measureEC());
+  delay(10000);
+  Serial.println("-----------------------------------------");
 }
   
 
 
 float measureEC(){
   //turn on pin 8
-  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
   
   // measure R2
-  int unconvertedVReading = analogRead(A0);
-  unconvertedVReading = analogRead(A0);
-  //turn off pin 8
+  int unconvertedVReading = analogRead(A5);
+  unconvertedVReading = analogRead(A5);
+  //turn off pin 9
   
-  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
 
   //convert Reading into voltage
-  float voltage = (unconvertedVReading*5.0f)/1024.0;
-  Serial.println(voltage);
+  float voltage = (5.0f/1024.0f)*unconvertedVReading;
+  
   // your r1 value
-  int r1 = 1000;
+  int r1 = 470;
   //calculating r2
-  Serial.println(voltage);
   float r2 = (voltage* r1)/(5.0f-voltage);
-  Serial.println(r2);
+
   //resistance per cm
   float rCm = (r2/0.6);
-  Serial.println(rCm);
  
   //calculate ec/cm 
   float ec = (1.0f/rCm);
-  Serial.println(ec,32);
+
+  //measure temperature
+  float temp = measureTemp();
+
+  
   //compensate temperature
-  float ec25 = ec / (1.0f + 0.019f * (measureTemp() - 25.0));
-  Serial.println(ec25,32);
+  float ec25 = ec / (1.0f + 0.019f * (temp - 25.0));
+  ec25 = ec25* pow(10,6);
+  //μS
+  
   return ec25;
   
 }
