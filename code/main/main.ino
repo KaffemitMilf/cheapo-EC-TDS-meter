@@ -12,12 +12,12 @@ void setup() {
   delay(1000);  //added to give the onewire stuff time to initialize.
   sensors.begin();
 
-  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
 }
 
 void loop() {
   Serial.println("-----------------------------------------");
-  Serial.print(measureEC());
+  Serial.println(String(measureEC()) + "microS");
   delay(10000);
   Serial.println("-----------------------------------------");
 }
@@ -26,23 +26,25 @@ void loop() {
 
 float measureEC(){
   //turn on pin 8
-  digitalWrite(9, HIGH);
+  digitalWrite(8, HIGH);
+  delay(500);
+ 
   
   // measure R2
-  int unconvertedVReading = analogRead(A5);
-  unconvertedVReading = analogRead(A5);
-  //turn off pin 9
+  int unconvertedReading = analogRead(A5);
+  unconvertedReading = analogRead(A5);
   
-  digitalWrite(9, LOW);
+  //turn off pin 8
+  digitalWrite(8, LOW);
 
   //convert Reading into voltage
-  float voltage = (5.0f/1024.0f)*unconvertedVReading;
+  float voltage = (5.0f/1024.0f)*unconvertedReading;
   
   // your r1 value
   int r1 = 470;
-  //calculating r2
-  float r2 = (voltage* r1)/(5.0f-voltage);
-
+  //calculating r2, 
+  float r2 = (voltage* r1)/(5.0f-voltage)-25;
+  Serial.println(String(r2)+"R2");
   //resistance per cm
   float rCm = (r2/0.6);
  
@@ -59,7 +61,6 @@ float measureEC(){
   //μS
   
   return ec25;
-  
 }
 
 
