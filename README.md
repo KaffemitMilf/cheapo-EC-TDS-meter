@@ -78,4 +78,13 @@ You need:
 
 ![front_view](https://user-images.githubusercontent.com/80157991/170272913-3d3b8dd5-d585-4202-bf20-8e1e66999937.png)
 
+## wiring
+![wiring](https://user-images.githubusercontent.com/80157991/175811279-f5682562-a170-4d43-a030-691712db1cce.png)
+
+
+## notes
+- use a higher voltage at the V<sub>in</sub> pin than 5V, so the voltage regulator will output 5V as close as possible, otherwise the readings wont be correct
+(I used a voltage of 9V, because I heard of people destroying the voltage regulator using a voltage greater than 9V)
+- never plug something directly into the mains!!!
+- feel free to ask/ criticize
 
